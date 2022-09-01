@@ -13,4 +13,4 @@ pipelines:
       - step:
           name: sync mirror to github
           script:
-            - git push --mirror https://SpiritLing:$GITHUb_ACCESS_MIRROR_SYNC@github.com/SpiritLing/Essay.git
+            - git push --mirror https://SpiritLing:$GITHUb_ACCESS_MIRROR_SYNC@github.com/SpiritLing/Archive.git
