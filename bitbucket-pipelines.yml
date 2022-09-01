@@ -1,0 +1,16 @@
+image: atlassian/default-image:3
+
+clone:
+  depth: full
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: ls all file
+          script:
+            - git log -2 -q
+      - step:
+          name: sync mirror to github
+          script:
+            - git push --mirror https://SpiritLing:$GITHUb_ACCESS_MIRROR_SYNC@github.com/SpiritLing/Essay.git
